@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Modelos y Maquetas</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/modelosclasicos.css">
+</head>
+<body>
+
+	<div class="container">
+		<div id="principal">
+			<div id="cont_botones">
+				<button id="btnEmpleados" class="btn" onclick="consultarOficinas()">Empleados</button>
+				<button id="btnProductos" class="btn" onclick="consultarProductos()">Productos</button>
+			</div>
+
+			<div id="cont_select">
+				<h3 id="tituloLista">OFICINAS</h3>
+				<select id="lista" onchange="consultarDatosOficinas(this.value)">
+					<option>-----</option>
+				</select>
+			</div>
+
+			<div id="cont_tabla">
+				<h3 id="tituloTabla">OFICINA: ----</h3>
+				<table id="tabla" class="table table-hover table-striped">
+					<thead>
+						<th>Col 1</th><th>Col 2</th><th>Col 3</th><th>Col 4</th>
+					</thead>
+					<tbody>
+						<tr><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/modelosclasicos.js"></script>
+</body>
+</html>
